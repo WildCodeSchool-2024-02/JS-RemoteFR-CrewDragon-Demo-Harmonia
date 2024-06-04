@@ -1,12 +1,10 @@
-const express = require("express");
+const app = require("./app/config");
 const PORT = 3310;
 
-const app = express();
-
-app.get("/", (req, res) => {
-	res.send("plop");
-});
-
-app.listen(PORT, () => {
-	console.log("L'application tourne sur le port : ", PORT);
+app.listen(PORT, (err) => {
+	if (err) {
+		console.error("Une erreur est survenu: ", err);
+	} else {
+		console.log("L'application tourne sur le port : ", PORT);
+	}
 });
