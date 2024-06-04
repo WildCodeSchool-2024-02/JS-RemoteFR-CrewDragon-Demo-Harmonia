@@ -1,0 +1,16 @@
+{
+	"name": "beta_harmonia",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"server",
+		"backend"
+	],
+	"author": "CrewDragon",
+	"license": "ISC",
+	"description": "Petit projet pour appréhender le backend"
+}
