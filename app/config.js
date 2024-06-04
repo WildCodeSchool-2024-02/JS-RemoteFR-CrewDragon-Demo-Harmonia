@@ -1,13 +1,8 @@
 const express = require("express");
+const routers = require("./routers/index");
 
 const app = express();
 
-const { toto, tata, titi } = require("./controllers/totoController");
-
-app.get("/api/tata", tata);
-
-app.get("/api/toto", toto);
-
-app.get("/api/titi", titi);
+app.use("/api", routers);
 
 module.exports = app;
