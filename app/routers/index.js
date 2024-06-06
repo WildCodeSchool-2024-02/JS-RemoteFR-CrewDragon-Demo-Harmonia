@@ -3,8 +3,8 @@ const router = express.Router();
 
 /** TOUTES MES ROUTES POUR LE ROUTERS DE LA CONFIG */
 
-const totoRouter = require("./toto/router");
+const usersRouter = require("./user/router");
 
-router.use("/toto", totoRouter);
+router.use("/users", usersRouter);
 
 module.exports = router;
